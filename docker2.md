@@ -1,6 +1,6 @@
 # Port forwarding
 
-![overview](E:\Docker\images\docker1.png)
+![overview](images\docker1.png)
 
 * Let me create three applications in two containers each
   * nginx (it runs on port 80 )
@@ -25,7 +25,7 @@ docker container ls
  or 
 docker container ps
 ```
-![preview](E:\Docker\images\docker2.png)
+![preview](images\docker2.png)
 
 * The above containers are not userful for me as i cannot access them from outside the vm.
 * Delete all the containers docker container rm -f $(docker container ls -q -a)
@@ -33,11 +33,11 @@ docker container ps
 * For port forwarding we have two modes
 * static -p <hostport>:<containerPort>
 
-![preview](E:\Docker\images\docker3.png)
-![preview](E:\Docker\images\docker4.png)
+![preview](images\docker3.png)
+![preview](images\docker4.png)
 
 * Dynamic -P
-![preview](E:\Docker\images\docker5.png)
+![preview](images\docker5.png)
 
 * Lets apply dynamic Port forwarding
 
@@ -50,12 +50,12 @@ docker container run -d -P --name mysql1 -e MYSQL_ROOT_PASSWORD=password mysql:8
 docker container run -d -P --name mysql2 -e MYSQL_ROOT_PASSWORD=password mysql:8.0
 ```
 
-![preview](E:\Docker\images\docker6.png)
+![preview](images\docker6.png)
 
 * lets connect to jenkines
 
-![preview](E:\Docker\images\docker7.png)
+![preview](images\docker7.png)
 
-* lets connect to nginx 
+* lets connect to nginx
 
-![preview](E:\Docker\images\docker8.png)
+![preview](images\docker8.png)
