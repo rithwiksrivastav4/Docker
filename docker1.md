@@ -1,6 +1,6 @@
 # Docker Installation
 
-* For Guided creation of ec2 instance watch classroom recording
+* lets create  ec2 instance and  install docker
 * Docker installation
 
 * Simplest installation
@@ -10,7 +10,7 @@ curl -fsSL https://get.docker.com -o install-docker.sh
 sh install-docker.sh
 ```
 
-* NOw add the current user to  docker group
+* Now add the current user to  docker group
 
 ```bash
 sudo usermod -aG docker $USER
@@ -38,15 +38,13 @@ docker pull nginx
 
 ------------------------------------------------------
 
-
 ### Docker images from docker hub
 
-* official images <application>:<tag>
+* official images < application >:< tag >
 * community images organization/application:tag
-* private images <username>/application:tag
+* private images < username >/application:tag
 
 ------------------------------------------------------
-
 
 ## Docker container creation modes
 
@@ -88,7 +86,7 @@ docker container exec -it nginx2 /bin/bash
 
 ------------------------------------------------------
 
-## Observations:
+## Observations
 
 * Inside containers, the PID 1 is the application startup
 * Container will have its own process tree
